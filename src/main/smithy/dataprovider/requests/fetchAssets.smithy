@@ -3,9 +3,10 @@ $version: "2"
 namespace tech.maze.dtos.dataprovider.requests
 
 use smithy.api#Document
+use tech.maze.dtos.dataprovider.enums#PrimaryClass
 
 list FetchAssetsResponseMessageAssetsList {
-    member: Asset
+    member: FetchAssetsResponseMessageAsset
 }
 
 map FetchAssetsResponseMessageAssetMetaDatasExtraDatasMap {

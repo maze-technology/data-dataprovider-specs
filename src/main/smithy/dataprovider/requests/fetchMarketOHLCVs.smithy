@@ -4,9 +4,10 @@ namespace tech.maze.dtos.dataprovider.requests
 
 use smithy.api#Document
 use smithy.api#Timestamp
+use tech.maze.dtos.dataprovider.types#Duration
 
 list FetchMarketOHLCVsResponseMessageOhlcvsList {
-    member: OHLCV
+    member: Document
 }
 
 map FetchMarketOHLCVsRequestBaseAssetToolBoxMap {

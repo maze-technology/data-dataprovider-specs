@@ -5,7 +5,7 @@ namespace tech.maze.dtos.dataprovider.requests
 use smithy.api#Document
 
 list FetchMarketsResponseMessageMarketsList {
-    member: Market
+    member: FetchMarketsResponseMessageMarket
 }
 
 map FetchMarketsResponseMessageMarketMetaDatasExtraDatasMap {
@@ -33,10 +33,10 @@ structure FetchMarketsResponseMessage {
 }
 
 structure FetchMarketsResponseMessageMarket {
-    baseAssetCriterion: Criterion
-    quoteAssetCriterion: Criterion
-    type: Type
-    exchange: Exchange
+    baseAssetCriterion: Document
+    quoteAssetCriterion: Document
+    type: String
+    exchange: String
 }
 
 structure FetchMarketsResponseMessageMarketMetaDatas {
