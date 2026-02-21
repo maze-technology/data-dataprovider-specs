@@ -7,13 +7,23 @@ list RankingsResponseRankingsList {
 }
 
 structure Rankings {
+    @required
     id: String
+
+    @required
     symbol: String
+
+    @required
     name: String
+
+    @required
     rank: Long
 }
 
 structure RankingsResponse {
+    @required
     rankedBy: String
+
+    @required
     rankings: RankingsResponseRankingsList
 }
