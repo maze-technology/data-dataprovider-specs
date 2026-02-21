@@ -24,23 +24,39 @@ structure FetchAssets {}
 structure FetchAssetsRequest {}
 
 structure FetchAssetsResponse {
+    @required
     skipped: Long
+
+    @required
     dataProviderId: Document
+
+    @required
     messageKey: String
 }
 
 structure FetchAssetsResponseMessage {
+    @required
     assets: FetchAssetsResponseMessageAssetsList
 }
 
 structure FetchAssetsResponseMessageAsset {
+    @required
     id: String
+
+    @required
     symbol: String
+
+    @required
     name: String
+
+    @required
     primaryClass: PrimaryClass
 }
 
 structure FetchAssetsResponseMessageAssetMetaDatas {
+    @required
     extraDatas: FetchAssetsResponseMessageAssetMetaDatasExtraDatasMap
+
+    @required
     toolBox: FetchAssetsResponseMessageAssetMetaDatasToolBoxMap
 }
