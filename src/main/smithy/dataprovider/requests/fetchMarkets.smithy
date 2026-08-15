@@ -55,7 +55,7 @@ structure FetchMarketsResponseMessageMarket {
 structure FetchMarketsResponseMessageMarketMetaDatas {
     @required
     extraDatas: FetchMarketsResponseMessageMarketMetaDatasExtraDatasMap
-    
+
     @required
     toolBox: FetchMarketsResponseMessageMarketMetaDatasToolBoxMap
 }
